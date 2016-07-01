@@ -1,0 +1,51 @@
+// 需要考虑兼容性
+.container {
+  display: flex;
+  flex-flow: row;
+  height: 100%;
+}
+
+.content {
+  width: 80%;
+}
+
+.side {
+  flex: 1;
+  height: 100%;
+  background: #404040;
+  margin-right: 20px;
+
+  .logotitle {
+    margin: 5px 0;
+    line-height: 35px;
+    padding-left: 60px;
+    position: relative;
+    color: #999;
+    .logo {
+      position: absolute;
+      left: 15px;
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
+.main {
+  padding: 8px;
+  flex: 1 0 auto;
+}
+
+.foot {
+  margin-top: 20px;
+  background: greenyellow;
+  padding: 8px;
+}
+
+// Hover Background - To Be Changed?
+.ant-menu-dark .ant-menu-item:hover, .ant-menu-dark .ant-menu-item-active, .ant-menu-dark .ant-menu-submenu-active, .ant-menu-dark .ant-menu-submenu-title:hover{
+  color: #FF3333 !important;
+}
+
+.ant-menu-dark.ant-menu-inline .ant-menu-item-selected {
+  background-color: #FF3333 !important;
+}
